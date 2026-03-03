@@ -13,6 +13,8 @@ public class ExPersonalizada {
             sacar(100, 500);
         }catch (SaldoInsulficienteException e){
             System.out.println("Erro: " + e.getMessage());
-    }
+        }finally {
+            System.out.println("Fim!");
+        }
     }
 }
