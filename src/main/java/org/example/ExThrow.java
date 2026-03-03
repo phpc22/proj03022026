@@ -1,0 +1,13 @@
+package org.example;
+
+public class ExThrow {
+    static void validarIdade(int idade){
+        if (idade < 18){
+            throw new IllegalArgumentException("Idade mínima é 18!");
+        }
+        System.out.println("Acesso Liberado!");
+    }
+    public static void main(String[] args) {
+        validarIdade(15);
+    }
+}
